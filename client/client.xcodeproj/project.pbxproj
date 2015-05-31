@@ -14,6 +14,8 @@
 		5B23B6BF1B1B011C0011833A /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B23B6BE1B1B011C0011833A /* SDL2.framework */; };
 		5B23B6C21B1B013B0011833A /* SpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B6C01B1B013B0011833A /* SpriteManager.cpp */; };
 		5B23B6C51B1B017B0011833A /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B6C31B1B017B0011833A /* Sprite.cpp */; };
+		5B23B6C81B1B023A0011833A /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B6C61B1B023A0011833A /* Screen.cpp */; };
+		5B23B6CB1B1B02890011833A /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B23B6C91B1B02890011833A /* Input.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,11 @@
 		5B23B6C11B1B013B0011833A /* SpriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteManager.h; sourceTree = "<group>"; };
 		5B23B6C31B1B017B0011833A /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
 		5B23B6C41B1B017B0011833A /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		5B23B6C61B1B023A0011833A /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		5B23B6C71B1B023A0011833A /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		5B23B6C91B1B02890011833A /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
+		5B23B6CA1B1B02890011833A /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
+		5B23B6CC1B1B02D50011833A /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,11 @@
 				5B23B6C11B1B013B0011833A /* SpriteManager.h */,
 				5B23B6C31B1B017B0011833A /* Sprite.cpp */,
 				5B23B6C41B1B017B0011833A /* Sprite.h */,
+				5B23B6C61B1B023A0011833A /* Screen.cpp */,
+				5B23B6C71B1B023A0011833A /* Screen.h */,
+				5B23B6C91B1B02890011833A /* Input.cpp */,
+				5B23B6CA1B1B02890011833A /* Input.h */,
+				5B23B6CC1B1B02D50011833A /* Constant.h */,
 			);
 			path = client;
 			sourceTree = "<group>";
@@ -147,6 +159,8 @@
 				5B23B6C21B1B013B0011833A /* SpriteManager.cpp in Sources */,
 				5B23B6B21B1B00F20011833A /* main.cpp in Sources */,
 				5B23B6C51B1B017B0011833A /* Sprite.cpp in Sources */,
+				5B23B6C81B1B023A0011833A /* Screen.cpp in Sources */,
+				5B23B6CB1B1B02890011833A /* Input.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
