@@ -1,13 +1,14 @@
 //
 //  Sprite.h
-//  fate
+//  client
 //
 //  Created by 정인중 on 2015. 5. 31..
 //  Copyright (c) 2015년 스튜디오 작은별. All rights reserved.
 //
 
-#ifndef __fate__Sprite__
-#define __fate__Sprite__
+#ifndef __client__Sprite__
+#define __client__Sprite__
+
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
 #include <string>
@@ -46,4 +47,4 @@ namespace fate {
     };
 }
 
-#endif /* defined(__fate__Sprite__) */
+#endif /* defined(__client__Sprite__) */
