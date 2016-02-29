@@ -41,6 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>Y:\GitHub\fate\library\SDL2\include;Y:\GitHub\fate\library\SDL2_ttf\include;Y:\GitHub\fate\library\SDL2_mixer\include;Y:\GitHub\fate\library\SDL2_image\include;$(IncludePath)</IncludePath>
+    <LibraryPath>Y:\GitHub\fate\library\SDL2_ttf\lib\x86;Y:\GitHub\fate\library\SDL2_mixer\lib\x86;Y:\GitHub\fate\library\SDL2_image\lib\x86;Y:\GitHub\fate\library\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -57,6 +59,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -78,6 +81,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Constant.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
