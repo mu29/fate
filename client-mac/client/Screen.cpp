@@ -30,6 +30,7 @@ bool Screen::initSDL() {
 
 bool Screen::createWindow() {
     mWindow = SDL_CreateWindow("Baram", mWindowRect.x, mWindowRect.y, mWindowRect.w, mWindowRect.h, 0);
+    SDL_SetWindowPosition(mWindow, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     
     if (mWindow == nullptr)
         return false;
